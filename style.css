@@ -1,0 +1,266 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    /* width: 100%; */
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* DESKTOP NAV */
+
+#navbar {
+    width: 100vw;
+    background-color: #f5f5f7;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 180px;
+    font-size: 12px;
+    line-height: 15px;
+    list-style: none;
+}
+
+#navbar ul li {
+    cursor: pointer;
+}
+
+.apple-icon {
+    font-size: 18px;
+}
+
+.search-icon, .bag-icon {
+    font-size: 15px;
+}
+
+#navbar-second {
+    display: none;
+}
+
+#text-banner {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    background-color: #0066cc;
+    color: white;
+}
+
+#banner-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    cursor: pointer;
+}
+
+
+#text-banner .banner {
+    width: 43%;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+
+/* Slide down animation starts here */
+
+.slideDown{
+	animation-name: slideDown;
+	-webkit-animation-name: slideDown;	
+
+	animation-duration: 0.1s;	
+	-webkit-animation-duration: 0.8s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+
+	visibility: visible !important;						
+}
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	50%{
+		transform: translateY(8%);
+	}
+	65%{
+		transform: translateY(-4%);
+	}
+	80%{
+		transform: translateY(4%);
+	}
+	95%{
+		transform: translateY(-2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+@-webkit-keyframes slideDown {
+	0% {
+		-webkit-transform: translateY(-100%);
+	}
+	50%{
+		-webkit-transform: translateY(8%);
+	}
+	65%{
+		-webkit-transform: translateY(-4%);
+	}
+	80%{
+		-webkit-transform: translateY(4%);
+	}
+	95%{
+		-webkit-transform: translateY(-2%);
+	}			
+	100% {
+		-webkit-transform: translateY(0%);
+	}	
+}
+
+
+/* Slide down animation ends here */
+
+
+/* Hero sections starts here */
+
+#hero-section {
+    width: 100%;
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5f5f7;
+}
+
+#hero-section .hero-heading {
+    width: 50%;
+}
+
+#hero-section .hero-heading h1 {
+    font-size: 45px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: 0.004em;
+    color: #6e6e73;
+}
+
+#hero-section .hero-heading h1 span {
+    color: #000000;
+}
+
+#hero-section .hero-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#hero-section .hero-contact .store-img{
+    display: flex;
+    
+}
+
+#hero-section .hero-contact .store-img img {
+    height: 35px;
+    margin-right: 12px;
+}
+
+
+#hero-section .hero-contact .store-img a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#hero-section .hero-contact p {
+    color: #6e6e73;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+#hero-section .hero-contact .store-img i {
+    font-size: 35px;
+    padding-left: 5px;
+    margin-right: 12px;
+}
+
+#hero-section .hero-contact .store-img a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+}
+
+/*---------------*/
+
+#main-img-section {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+#main-img-section .images-section {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    background-color: #f5f5f7;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    gap: 50px;
+    padding-left: 120px;
+}
+
+#main-img-section .images-section {
+    &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#main-img-section .images-section .img {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-img-section .images-section .img img {
+    width: 150px;
+}
+
+/* Cards Sections*/
+
+/* .scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  
+    .card {
+      display: inline-block;
+    }
+}
+
+.scrolling-wrapper {
+    -webkit-overflow-scrolling: touch;
+}
+
+.scrolling-wrapper {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+} */
